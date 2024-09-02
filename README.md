@@ -21,7 +21,7 @@ Findash is a personal finance management application designed to help users trac
 
 ### Installation
 1. **Clone the repository:**
- -  ```bash
+   ```bash
    git clone https://github.com/Seyi-Toluhi/FinDash.git
    cd findash
 
