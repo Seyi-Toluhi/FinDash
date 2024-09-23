@@ -5,8 +5,9 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Navbar from "./components/Navbar";
 // import Header from './components/Header';
-// import MainGrid from './components/MainGrid';
+import MainGrid from './components/MainGrid';
 import SideMenu from './components/SideMenu';
+import { Typography } from '@mui/material';
 
 import AppTheme from './Theme/AppTheme';
 import {
@@ -54,18 +55,22 @@ export default function Dashboard(props) {
               }}
             >
               {/* <Header /> */}
-              {/* <MainGrid /> */}
+              <Box sx={{ display: 'flex' }}>
+              <Typography component="h2" variant="h6" sx={{ mb: 2 }}>
+                  Overview
+                </Typography>
+                </Box>
               <Box sx={{ display: 'flex' }}>
                 <dotlottie-player
                   src="https://lottie.host/f60ed0b5-5927-41bf-bd92-160d9af3ee0e/difhaTwSYM.json"
                   background="transparent"
                   speed="1"
-                  style={{ width: '300px', height: '300px' }} // Change inline style to JSX format
+                  style={{ width: '120px', height: '120px' }}
                   loop
                   autoplay
                 />
               </Box>
-
+              <MainGrid />
             </Stack>
           </Box>
         </Box>
