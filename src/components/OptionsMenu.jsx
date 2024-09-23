@@ -6,10 +6,12 @@ import MuiMenuItem from '@mui/material/MenuItem';
 import { paperClasses } from '@mui/material/Paper';
 import { listClasses } from '@mui/material/List';
 import ListItemText from '@mui/material/ListItemText';
+import { menuItemClasses } from '@mui/material/MenuItem';
 import ListItemIcon, { listItemIconClasses } from '@mui/material/ListItemIcon';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import MoreVertRoundedIcon from '@mui/icons-material/MoreVertRounded';
 import MenuButton from './MenuButton';
+import { colorSchemes} from '../Theme/themePrimitives';
 
 const MenuItem = styled(MuiMenuItem)({
   margin: '2px 0',
@@ -29,7 +31,7 @@ export default function OptionsMenu() {
       <MenuButton
         aria-label="Open menu"
         onClick={handleClick}
-        sx={{ borderColor: 'transparent' }}
+        sx={{ borderColor: 'transparent'}}
       >
         <MoreVertRoundedIcon />
       </MenuButton>
@@ -51,12 +53,15 @@ export default function OptionsMenu() {
           [`& .${dividerClasses.root}`]: {
             margin: '4px -4px',
           },
+          [`& .${menuItemClasses.root}`]: {
+            color: colorSchemes.light.palette.text.secondary,
+          }
+          
         }}
       >
         <MenuItem onClick={handleClose}>Profile</MenuItem>
         <MenuItem onClick={handleClose}>My account</MenuItem>
         <Divider />
-        <MenuItem onClick={handleClose}>Add another account</MenuItem>
         <MenuItem onClick={handleClose}>Settings</MenuItem>
         <Divider />
         <MenuItem

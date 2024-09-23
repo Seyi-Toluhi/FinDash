@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import { alpha } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
@@ -56,6 +55,17 @@ export default function Dashboard(props) {
             >
               {/* <Header /> */}
               {/* <MainGrid /> */}
+              <Box sx={{ display: 'flex' }}>
+                <dotlottie-player
+                  src="https://lottie.host/f60ed0b5-5927-41bf-bd92-160d9af3ee0e/difhaTwSYM.json"
+                  background="transparent"
+                  speed="1"
+                  style={{ width: '300px', height: '300px' }} // Change inline style to JSX format
+                  loop
+                  autoplay
+                />
+              </Box>
+
             </Stack>
           </Box>
         </Box>

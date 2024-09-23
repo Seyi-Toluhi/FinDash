@@ -8,8 +8,8 @@ import { tabsClasses } from '@mui/material/Tabs';
 import Typography from '@mui/material/Typography';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import DashboardRoundedIcon from '@mui/icons-material/DashboardRounded';
-// import SideMenuMobile from './SideMenuMobile';
-// import MenuButton from './MenuButton';
+import SideMenuMobile from './SideMenuMobile';
+import MenuButton from './MenuButton';
 
 const Toolbar = styled(MuiToolbar)({
   width: '100%',
@@ -58,15 +58,20 @@ export default function Navbar() {
           }}
         >
           <Stack direction="row" spacing={1} sx={{ justifyContent: 'center' }}>
-            <CustomIcon />
+            {/* <CustomIcon /> */}
+            <img 
+            src="/images/Findash_Logo.svg" 
+            alt="Findash Logo" 
+            style={{ width: '50px', height: '50px' }}
+  />
             <Typography variant="h4" component="h1" sx={{ color: 'text.primary' }}>
-              Dashboard
+              FinDash
             </Typography>
           </Stack>
-          {/* <MenuButton aria-label="menu" onClick={toggleDrawer(true)}>
+          <MenuButton aria-label="menu" onClick={toggleDrawer(true)}>
             <MenuRoundedIcon />
           </MenuButton>
-          <SideMenuMobile open={open} toggleDrawer={toggleDrawer} /> */}
+          <SideMenuMobile open={open} toggleDrawer={toggleDrawer} />
         </Stack>
       </Toolbar>
     </AppBar>
