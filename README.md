@@ -6,6 +6,10 @@ Findash is a personal finance management application designed to help users trac
 - **Spending Insights**: Visualise your spending patterns and receive insights to help manage your finances.
 - **Transaction Tracking**: Keep track of all your transactions in one place.
 - **User-Friendly Dashboard**: Interactive and easy-to-navigate dashboard with real-time updates.
+## Project planning
+- **[Miro](https://miro.com/app/board/uXjVKkSWbho=/)**
+- **[Excalidraw]()**
+- **[Trello]()**
 ## Getting Started
 ### Prerequisites
 - [Node.js](https://nodejs.org/) and npm installed
