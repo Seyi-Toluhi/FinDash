@@ -40,7 +40,7 @@ export default function Navbar() {
       sx={{
         display: { xs: 'auto', md: 'none' },
         boxShadow: 0,
-        bgcolor: 'background.paper',
+        bgcolor: 'background.sidebar',
         backgroundImage: 'none',
         borderBottom: '1px solid',
         borderColor: 'divider',
