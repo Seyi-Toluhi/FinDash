@@ -13,9 +13,9 @@ Findash is a personal finance management application designed to help users trac
 - [Plaid Account](https://plaid.com/) for connecting financial accounts (Sandpit for development)
 ### Installation
 1. **Clone the repository:**
-  ```bash
-  git clone https://github.com/Seyi-Toluhi/FinDash.git
-  cd findash
+    ```bash
+    git clone https://github.com/Seyi-Toluhi/FinDash.git
+    cd findash
 2. **Install frontend dependencies:**
 - cd frontend
 - npm install
