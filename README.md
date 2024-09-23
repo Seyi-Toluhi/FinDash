@@ -8,8 +8,7 @@ Findash is a personal finance management application designed to help users trac
 - **User-Friendly Dashboard**: Interactive and easy-to-navigate dashboard with real-time updates.
 ## Project planning
 - **[Miro](https://miro.com/app/board/uXjVKkSWbho=/)**
-- **[Excalidraw]()**
-- **[Trello]()**
+- **[Trello](https://trello.com/b/1M4wo0Xb/findash)**
 ## Getting Started
 ### Prerequisites
 - [Node.js](https://nodejs.org/) and npm installed
