@@ -13,7 +13,7 @@ import StatCard from './StatCard';
 
 const data = [
     {
-      title: 'income',
+      title: 'Income',
       value: '14k',
       interval: 'Last 30 days',
       trend: 'up',
