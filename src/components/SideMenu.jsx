@@ -44,7 +44,7 @@ export default function SideMenu() {
         }}
       >
         <img 
-            src="/images/Findash_Logo.svg" 
+            src="/images/Black_logo_and_App_name.png" 
             alt="Findash Logo" 
             style={{ width: '100px', height: '50px' }}
   />
