@@ -60,13 +60,10 @@ export default function Navbar() {
           <Stack direction="row" spacing={1} sx={{ justifyContent: 'center' }}>
             {/* <CustomIcon /> */}
             <img 
-            src="/images/Findash_Logo.svg" 
+            src="/images/Black_logo_and_App_name.png" 
             alt="Findash Logo" 
             style={{ width: '50px', height: '50px' }}
   />
-            <Typography variant="h4" component="h1" sx={{ color: 'text.primary' }}>
-              FinDash
-            </Typography>
           </Stack>
           <MenuButton aria-label="menu" onClick={toggleDrawer(true)}>
             <MenuRoundedIcon />

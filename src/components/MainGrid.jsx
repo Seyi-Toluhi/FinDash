@@ -10,10 +10,11 @@ import Typography from '@mui/material/Typography';
 // import PageViewsBarChart from './PageViewsBarChart';
 // import SessionsChart from './SessionsChart';
 import StatCard from './StatCard';
+import WalletCard from './WalletCard';
 
 const data = [
     {
-      title: 'Income',
+      title: 'Total Income',
       value: '14k',
       interval: 'Last 30 days',
       trend: 'up',
@@ -43,18 +44,21 @@ const data = [
       ],
     },
   ];
+
+  const wallet = [
+    {card: "6787******1632",
+    bal: 25000},
+
+    {card: "6787******3632",
+    bal: 35000},
+  ]
 export default function MainGrid() {
   return (
     <Box sx={{ width: '100%', maxWidth: { sm: '100%', md: '1700px' } }}>
-      {/* cards */}
-      {/* <Typography component="h2" variant="h6" sx={{ mb: 2 }}>
-        Overview
-      </Typography> */}
-
       <Grid
         container
         spacing={2}
-        columns={12}
+        columns={8}
         sx={{ mb: (theme) => theme.spacing(2) }}
       >
         {data.map((card, index) => (
@@ -62,27 +66,19 @@ export default function MainGrid() {
             <StatCard {...card} />
           </Grid>
         ))}
-        <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
-          {/* <HighlightedCard /> */}
-        </Grid>
-        <Grid size={{ sm: 12, md: 6 }}>
-          {/* <SessionsChart /> */}
-        </Grid>
-        <Grid size={{ sm: 12, md: 6 }}>
-          {/* <PageViewsBarChart /> */}
-        </Grid>
+        
       </Grid>
 
+      <Grid
+        container
+        spacing={2}
+        columns={8}
+        sx={{ mb: (theme) => theme.spacing(2) }}
+      >
       
-      <Grid container spacing={2} columns={12}>
-        <Grid size={{ md: 12, lg: 9 }}>
-          {/* <CustomizedDataGrid /> */}
-        </Grid>
-        <Grid size={{ xs: 12, lg: 3 }}>
-          <Stack gap={2} direction={{ xs: 'column', sm: 'row', lg: 'column' }}>
-            {/* <CustomizedTreeView /> */}
-            {/* <ChartUserByCountry /> */}
-          </Stack>
+        <Grid item size={{ xs: 12, sm: 6, lg: 3 }} 
+        >  
+          <WalletCard wallet={wallet} />
         </Grid>
       </Grid>
     </Box>
